@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "411803573047",
+    "project_id": "rapid-grocery",
+    "storage_bucket": "rapid-grocery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411803573047:android:8e38bbf5f062f5ba5c58b2",
+        "android_client_info": {
+          "package_name": "com.example.rapid_grocery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411803573047-cuaon5h2anc4st63hs1tu1cs6ubd0poc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqb_Tvs2QzP-ea_kIX4xCWQQccgCD3WcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411803573047-cuaon5h2anc4st63hs1tu1cs6ubd0poc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "411803573047-8u9d1ho874eh5n2pee7mhe81p5p9si99.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rapidGrocery"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,7 +35,7 @@ class DatabaseService {
     });
   }
 
-  UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
+  /*UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
     return UserData(
       uid: uid,
       name: snapshot.get('Name'),
@@ -43,6 +43,27 @@ class DatabaseService {
       address: snapshot.get('Address'),
       postcode: snapshot.get('Postcode'),
       city: snapshot.get('City'),
+    );
+  }*/
+
+  UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
+    return UserData(
+      uid: uid,
+      name: snapshot.data().toString().contains('Name')
+          ? snapshot.get('Name')
+          : '',
+      surname: snapshot.data().toString().contains('Surname')
+          ? snapshot.get('Surname')
+          : '',
+      address: snapshot.data().toString().contains('Address')
+          ? snapshot.get('Address')
+          : '',
+      postcode: snapshot.data().toString().contains('Postcode')
+          ? snapshot.get('Postcode')
+          : '',
+      city: snapshot.data().toString().contains('City')
+          ? snapshot.get('City')
+          : '',
     );
   }
 
